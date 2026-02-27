@@ -1,0 +1,102 @@
+/* ══════════════════════════════════
+   projects.css — Projects section
+   ══════════════════════════════════ */
+
+.project-card {
+  background: var(--clr-bg-2);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  max-width: 860px;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.project-card:hover {
+  border-color: var(--clr-border-hover);
+  box-shadow: var(--glow-cyan), 0 16px 50px rgba(0,0,0,0.4);
+}
+
+/* Header */
+.project-header {
+  background: var(--clr-bg-3);
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  border-bottom: 1px solid var(--clr-border);
+  flex-wrap: wrap;
+}
+
+.project-header-left {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.project-folder { font-size: 1.1rem; }
+
+.project-title {
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: var(--clr-cyan);
+  letter-spacing: 0.02em;
+}
+
+.project-badges {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+/* Body */
+.project-desc {
+  padding: 1.5rem 1.5rem 1rem;
+  font-size: var(--fs-base);
+  color: var(--clr-text-dim);
+  line-height: 1.8;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+
+/* Log entries */
+.project-log {
+  padding: 0.5rem 0;
+}
+
+.log-row {
+  display: flex;
+  gap: var(--space-3);
+  align-items: baseline;
+  padding: 0.55rem 1.5rem;
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+  transition: background var(--transition), padding-left var(--transition);
+  line-height: 1.5;
+}
+
+.log-row:last-child { border-bottom: none; }
+
+.log-row:hover {
+  background: rgba(0,229,255,0.04);
+  padding-left: 2rem;
+}
+
+.log-arrow {
+  color: var(--clr-cyan);
+  flex-shrink: 0;
+  font-size: 0.9em;
+  text-shadow: 0 0 8px var(--clr-cyan);
+}
+
+.log-row span { color: var(--clr-text-dim); }
+
+.log-row code {
+  color: var(--clr-cyan);
+  background: var(--clr-cyan-dim);
+  padding: 1px var(--space-2);
+  border-radius: var(--radius-sm);
+  font-size: 0.85em;
+  border: 1px solid rgba(0,229,255,0.15);
+}

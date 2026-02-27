@@ -1,0 +1,48 @@
+/* ══════════════════════════════════
+   animations.css — Scroll reveals
+                    & shared keyframes
+   ══════════════════════════════════ */
+
+/* Reveal on scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(36px);
+  transition: opacity 0.65s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.65s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger children of grid containers */
+.skills-grid    .reveal:nth-child(2) { transition-delay: 0.08s; }
+.skills-grid    .reveal:nth-child(3) { transition-delay: 0.16s; }
+.skills-grid    .reveal:nth-child(4) { transition-delay: 0.24s; }
+.skills-grid    .reveal:nth-child(5) { transition-delay: 0.32s; }
+.skills-grid    .reveal:nth-child(6) { transition-delay: 0.40s; }
+
+.certs-grid     .reveal:nth-child(2) { transition-delay: 0.1s; }
+.certs-grid     .reveal:nth-child(3) { transition-delay: 0.2s; }
+.certs-grid     .reveal:nth-child(4) { transition-delay: 0.3s; }
+
+.timeline       .reveal:nth-child(2) { transition-delay: 0.1s; }
+.timeline       .reveal:nth-child(3) { transition-delay: 0.2s; }
+.timeline       .reveal:nth-child(4) { transition-delay: 0.28s; }
+.timeline       .reveal:nth-child(5) { transition-delay: 0.36s; }
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .hero-content > * {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+  .scanline, .particle, .scroll-line { animation: none; }
+}

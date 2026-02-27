@@ -1,0 +1,112 @@
+/* ══════════════════════════════════
+   experience.css — Timeline
+   ══════════════════════════════════ */
+
+.timeline {
+  position: relative;
+  padding-left: 2.5rem;
+  max-width: 780px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 6px; bottom: 0;
+  width: 1px;
+  background: linear-gradient(
+    to bottom,
+    var(--clr-cyan),
+    rgba(0,229,255,0.4) 60%,
+    transparent
+  );
+  box-shadow: 0 0 8px rgba(0,229,255,0.2);
+}
+
+/* Item */
+.timeline-item {
+  position: relative;
+  margin-bottom: var(--space-12);
+}
+
+.timeline-item:last-child { margin-bottom: 0; }
+
+/* Marker dot */
+.timeline-marker {
+  position: absolute;
+  left: calc(-2.5rem - 5px);
+  top: 5px;
+  width: 11px; height: 11px;
+  border-radius: 50%;
+  border: 2px solid var(--clr-cyan);
+  background: var(--clr-bg-0);
+  box-shadow: 0 0 10px rgba(0,229,255,0.3);
+  transition: all var(--transition);
+}
+
+.timeline-marker--active {
+  background: var(--clr-cyan);
+  box-shadow: var(--glow-cyan);
+  animation: markerPulse 2.5s ease-in-out infinite;
+}
+
+@keyframes markerPulse {
+  0%, 100% { box-shadow: 0 0 10px var(--clr-cyan), 0 0 20px rgba(0,229,255,0.3); }
+  50%       { box-shadow: 0 0 6px var(--clr-cyan); }
+}
+
+.timeline-item:hover .timeline-marker {
+  background: var(--clr-cyan);
+  transform: scale(1.3);
+}
+
+/* Content */
+.timeline-date {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--clr-green);
+  letter-spacing: 0.06em;
+  margin-bottom: var(--space-2);
+}
+
+.timeline-role {
+  font-size: var(--fs-xl);
+  font-weight: 700;
+  color: var(--clr-white);
+  margin-bottom: var(--space-1);
+  line-height: 1.3;
+}
+
+.timeline-company {
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  color: var(--clr-cyan);
+  margin-bottom: var(--space-4);
+  letter-spacing: 0.02em;
+}
+
+.timeline-points {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.timeline-points li {
+  display: flex;
+  gap: var(--space-3);
+  font-size: var(--fs-sm);
+  color: var(--clr-text-dim);
+  line-height: 1.65;
+}
+
+.timeline-points li::before {
+  content: '▸';
+  color: var(--clr-cyan);
+  flex-shrink: 0;
+  font-size: 0.75em;
+  margin-top: 3px;
+}
+
+@media (max-width: 600px) {
+  .timeline { padding-left: 1.8rem; }
+}

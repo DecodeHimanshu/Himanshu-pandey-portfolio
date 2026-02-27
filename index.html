@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Himanshu Pandey — CEH v13 Certified SOC Analyst. Threat Detection, SIEM, Incident Response." />
+  <title>Himanshu Pandey | SOC Analyst</title>
+
+   <!-- Scripts -->
+  <script src="js/cursor.js" defer></script>
+  <script src="js/typing.js" defer></script>
+  <script src="js/particles.js" defer></script>
+  <script src="js/nav.js" defer></script>
+  <script src="js/reveal.js" defer></script>
+ 
+
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/skills.css" />
+  <link rel="stylesheet" href="css/certifications.css" />
+  <link rel="stylesheet" href="css/projects.css" />
+  <link rel="stylesheet" href="css/experience.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Background Grid -->
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <!-- ═══ NAVIGATION ═══ -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <a href="#hero" class="nav-logo" aria-label="Home">
+      <span class="logo-bracket">[</span>Himanshu Pandey<span class="logo-bracket">]</span>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks" role="list">
+      <li><a href="#about">about</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#certifications">certs</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#experience">experience</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+    <div class="nav-status" aria-label="Availability status">
+      <span class="status-dot" aria-hidden="true"></span>
+      <span>available_for_hire</span>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <section id="hero" aria-label="Introduction">
+    <div class="hero-bg-effects" aria-hidden="true">
+      <div class="scanline"></div>
+      <div class="particles" id="particles"></div>
+      <div class="hex-grid"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="eyebrow-line" aria-hidden="true"></span>
+        <span class="eyebrow-text">$ whoami</span>
+      </div>
+
+      <h1 class="hero-name">
+        <span class="name-first">Himanshu</span>
+        <span class="name-last">Pandey</span>
+      </h1>
+
+      <div class="hero-role" aria-live="polite">
+        <span class="role-prefix">›</span>
+        <span class="role-text" id="typingText"></span>
+        <span class="cursor-blink" aria-hidden="true">_</span>
+      </div>
+
+      <p class="hero-bio">
+        CEH v13 Certified cybersecurity professional from Lucknow, India.<br />
+        Specializing in <strong>threat detection</strong>, <strong>SIEM operations</strong> &amp; <strong>incident response</strong>.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="#projects" class="btn btn--primary">
+          <span>View My Work</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </a>
+        <a href="#contact" class="btn btn--ghost">Get In Touch</a>
+      </div>
+
+      <div class="hero-stats" aria-label="Key stats">
+        <div class="stat">
+          <span class="stat-val">CEH</span>
+          <span class="stat-label">v13 Certified</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat-val">3+</span>
+          <span class="stat-label">Certifications</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat-val">SOC</span>
+          <span class="stat-label">L1 Ready</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <div class="scroll-line"></div>
+      <span>scroll</span>
+    </div>
+  </section>
+
+  <!-- ═══ ABOUT ═══ -->
+  <section id="about" aria-labelledby="about-heading">
+    <div class="container">
+      <header class="section-header reveal">
+        <p class="section-eyebrow">// about_me</p>
+        <h2 id="about-heading" class="section-title">Who Am <em>I?</em></h2>
+        <div class="section-rule" aria-hidden="true"></div>
+      </header>
+
+      <div class="about-layout">
+        <div class="about-text reveal">
+          <p>I'm a <mark>CEH v13 Certified</mark> cybersecurity professional with deep hands-on experience in SOC operations, threat hunting, and incident response. My passion is building defensive security systems and analysing threats before they cause damage.</p>
+          <p>Trained in real-world SOC workflows through <mark>AK Infosoft</mark> and virtual internships with Mastercard &amp; Tata, I bring a robust foundation in <mark>Splunk, QRadar</mark>, vulnerability assessment, and the MITRE ATT&CK framework.</p>
+          <p>My background in <mark>Android Development</mark> gives me a developer's perspective on application security — understanding attack surfaces from the inside out, which makes me a more effective analyst.</p>
+          <div class="about-tags">
+            <span class="about-tag">Blue Team</span>
+            <span class="about-tag">SOC L1</span>
+            <span class="about-tag">Threat Hunter</span>
+            <span class="about-tag">SIEM Expert</span>
+          </div>
+        </div>
+
+        <div class="terminal reveal" role="region" aria-label="Profile terminal">
+          <div class="terminal-chrome">
+            <div class="chrome-dots" aria-hidden="true">
+              <span class="dot dot--red"></span>
+              <span class="dot dot--yellow"></span>
+              <span class="dot dot--green"></span>
+            </div>
+            <span class="chrome-title">himanshu@soc:~$ profile</span>
+          </div>
+          <div class="terminal-body">
+            <div class="term-line"><span class="t-prompt">$</span> <span class="t-cmd">cat</span> <span class="t-arg">profile.json</span></div>
+            <div class="term-line t-output">{</div>
+            <div class="term-line t-output t-indent"><span class="t-key">"name"</span>: <span class="t-str">"Himanshu Pandey"</span>,</div>
+            <div class="term-line t-output t-indent"><span class="t-key">"role"</span>: <span class="t-str">"Aspiring SOC Analyst (L1)"</span>,</div>
+            <div class="term-line t-output t-indent"><span class="t-key">"location"</span>: <span class="t-str">"Lucknow, India"</span>,</div>
+            <div class="term-line t-output t-indent"><span class="t-key">"education"</span>: <span class="t-str">"B.Tech IT — 74%"</span>,</div>
+            <div class="term-line t-output t-indent"><span class="t-key">"diploma"</span>: <span class="t-str">"Diploma IT — 76%"</span>,</div>
+            <div class="term-line t-output t-indent"><span class="t-key">"certifications"</span>: [<span class="t-str">"CEH v13"</span>, <span class="t-str">"SOC Analyst"</span>],</div>
+            <div class="term-line t-output t-indent"><span class="t-key">"status"</span>: <span class="t-bool">true</span> <span class="t-comment">// open_to_work</span></div>
+            <div class="term-line t-output">}</div>
+            <div class="term-line"><span class="t-prompt">$</span> <span class="t-cursor-inline">_</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SKILLS ═══ -->
+  <section id="skills" aria-labelledby="skills-heading">
+    <div class="container">
+      <header class="section-header reveal">
+        <p class="section-eyebrow">// tech_arsenal</p>
+        <h2 id="skills-heading" class="section-title">My <em>Skills</em></h2>
+        <div class="section-rule" aria-hidden="true"></div>
+      </header>
+
+      <div class="skills-grid">
+        <article class="skill-card reveal" data-accent="cyan">
+          <div class="skill-card-header">
+            <span class="skill-icon" aria-hidden="true">🔍</span>
+            <h3>SIEM &amp; SOC Ops</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Splunk (SPL)</span>
+            <span class="tag">QRadar</span>
+            <span class="tag">Alert Triage</span>
+            <span class="tag">Log Correlation</span>
+            <span class="tag">Incident Escalation</span>
+            <span class="tag">Case Documentation</span>
+          </div>
+        </article>
+
+        <article class="skill-card reveal" data-accent="red">
+          <div class="skill-card-header">
+            <span class="skill-icon" aria-hidden="true">⚠️</span>
+            <h3>Threat Detection</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Phishing Analysis</span>
+            <span class="tag">Brute-Force Detection</span>
+            <span class="tag">Malware Indicators</span>
+            <span class="tag">Anomaly Monitoring</span>
+            <span class="tag">IOC Analysis</span>
+          </div>
+        </article>
+
+        <article class="skill-card reveal" data-accent="purple">
+          <div class="skill-card-header">
+            <span class="skill-icon" aria-hidden="true">🛡️</span>
+            <h3>Vulnerability Assessment</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Nessus</span>
+            <span class="tag">Burp Suite</span>
+            <span class="tag">OWASP ZAP</span>
+            <span class="tag">Manual Testing</span>
+            <span class="tag">VAPT Reports</span>
+          </div>
+        </article>
+
+        <article class="skill-card reveal" data-accent="red">
+          <div class="skill-card-header">
+            <span class="skill-icon" aria-hidden="true">⚡</span>
+            <h3>Penetration Testing</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Nmap</span>
+            <span class="tag">Metasploit</span>
+            <span class="tag">Hydra</span>
+            <span class="tag">Nikto</span>
+            <span class="tag">WPScan</span>
+            <span class="tag">Dirb</span>
+          </div>
+        </article>
+
+        <article class="skill-card reveal" data-accent="green">
+          <div class="skill-card-header">
+            <span class="skill-icon" aria-hidden="true">🌐</span>
+            <h3>Network &amp; Traffic</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Wireshark</span>
+            <span class="tag">IDS/IPS</span>
+            <span class="tag">Firewall Rules</span>
+            <span class="tag">TCP/IP</span>
+            <span class="tag">Packet Analysis</span>
+            <span class="tag">ACL/NAT</span>
+          </div>
+        </article>
+
+        <article class="skill-card reveal" data-accent="cyan">
+          <div class="skill-card-header">
+            <span class="skill-icon" aria-hidden="true">📋</span>
+            <h3>Frameworks &amp; Scripting</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">MITRE ATT&CK</span>
+            <span class="tag">OWASP Top 10</span>
+            <span class="tag">Python</span>
+            <span class="tag">PowerShell</span>
+            <span class="tag">ISO 27001</span>
+            <span class="tag">GDPR</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CERTIFICATIONS ═══ -->
+  <section id="certifications" aria-labelledby="certs-heading">
+    <div class="container">
+      <header class="section-header reveal">
+        <p class="section-eyebrow">// credentials</p>
+        <h2 id="certs-heading" class="section-title">Certs &amp; <em>Training</em></h2>
+        <div class="section-rule" aria-hidden="true"></div>
+      </header>
+
+      <div class="certs-grid">
+        <article class="cert-card reveal" aria-label="CEH v13 Certification">
+          <div class="cert-accent" aria-hidden="true"></div>
+          <div class="cert-icon" aria-hidden="true">🛡️</div>
+          <h3 class="cert-name">Certified Ethical Hacker v13</h3>
+          <p class="cert-issuer">EC-Council</p>
+          <p class="cert-date">⏱ In Progress</p>
+          <span class="cert-badge cert-badge--pursuing">Pursuing</span>
+        </article>
+
+        <article class="cert-card reveal" aria-label="Cisco CyberOps Certification">
+          <div class="cert-accent" aria-hidden="true"></div>
+          <div class="cert-icon" aria-hidden="true">🔐</div>
+          <h3 class="cert-name">CyberOps Associate</h3>
+          <p class="cert-issuer">Cisco</p>
+          <p class="cert-date">📅 Nov 2025</p>
+          <span class="cert-badge cert-badge--done">✓ Completed</span>
+        </article>
+
+        <article class="cert-card reveal" aria-label="Splunk Certification">
+          <div class="cert-accent" aria-hidden="true"></div>
+          <div class="cert-icon" aria-hidden="true">📊</div>
+          <h3 class="cert-name">Intro to Splunk</h3>
+          <p class="cert-issuer">Splunk</p>
+          <p class="cert-date">📅 Nov 2025</p>
+          <span class="cert-badge cert-badge--done">✓ Completed</span>
+        </article>
+
+        <article class="cert-card reveal" aria-label="SOC Analyst Training">
+          <div class="cert-accent" aria-hidden="true"></div>
+          <div class="cert-icon" aria-hidden="true">🎯</div>
+          <h3 class="cert-name">SOC Analyst Training</h3>
+          <p class="cert-issuer">AK Infosoft Pvt. Ltd</p>
+          <p class="cert-date">📅 Jul – Oct 2025</p>
+          <span class="cert-badge cert-badge--done">✓ Completed</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PROJECTS ═══ -->
+  <section id="projects" aria-labelledby="projects-heading">
+    <div class="container">
+      <header class="section-header reveal">
+        <p class="section-eyebrow">// lab_work</p>
+        <h2 id="projects-heading" class="section-title">Featured <em>Project</em></h2>
+        <div class="section-rule" aria-hidden="true"></div>
+      </header>
+
+      <article class="project-card reveal" aria-label="Network Security Lab Simulation">
+        <div class="project-header">
+          <div class="project-header-left">
+            <span class="project-folder" aria-hidden="true">📁</span>
+            <h3 class="project-title">Network Security Lab Simulation</h3>
+          </div>
+          <div class="project-badges">
+            <span class="tag tag--sm">Wireshark</span>
+            <span class="tag tag--sm">IDS/IPS</span>
+            <span class="tag tag--sm">Firewall</span>
+            <span class="tag tag--sm">Metasploit</span>
+          </div>
+        </div>
+
+        <p class="project-desc">A comprehensive virtual SOC lab environment simulating real-world attack scenarios and blue-team defensive operations. Implemented full incident response lifecycle from detection through containment to documentation.</p>
+
+        <div class="project-log" role="list" aria-label="Project highlights">
+          <div class="log-row" role="listitem"><span class="log-arrow" aria-hidden="true">→</span><span>Configured <code>ACLs / NAT / Port filtering</code> to control and secure network traffic flows</span></div>
+          <div class="log-row" role="listitem"><span class="log-arrow" aria-hidden="true">→</span><span>Monitored live packets using <code>Wireshark</code> — analyzed traffic patterns and detected anomalies in real time</span></div>
+          <div class="log-row" role="listitem"><span class="log-arrow" aria-hidden="true">→</span><span>Simulated <code>Brute Force, DoS, and Port Scanning</code> attacks in controlled lab environments</span></div>
+          <div class="log-row" role="listitem"><span class="log-arrow" aria-hidden="true">→</span><span>Implemented <code>intrusion detection</code> techniques and verified traffic logs for malicious activity indicators</span></div>
+          <div class="log-row" role="listitem"><span class="log-arrow" aria-hidden="true">→</span><span>Performed <code>alert validation</code> and false positive analysis during active attack simulations</span></div>
+          <div class="log-row" role="listitem"><span class="log-arrow" aria-hidden="true">→</span><span>Documented findings with <code>network topology diagrams</code> and actionable security recommendations</span></div>
+          <div class="log-row" role="listitem"><span class="log-arrow" aria-hidden="true">→</span><span>Maintained detailed <code>incident notes</code> and investigation records for each attack scenario</span></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ═══ EXPERIENCE ═══ -->
+  <section id="experience" aria-labelledby="exp-heading">
+    <div class="container">
+      <header class="section-header reveal">
+        <p class="section-eyebrow">// work_history</p>
+        <h2 id="exp-heading" class="section-title">Experience &amp; <em>Internships</em></h2>
+        <div class="section-rule" aria-hidden="true"></div>
+      </header>
+
+      <ol class="timeline" reversed aria-label="Work history timeline">
+
+        <li class="timeline-item reveal">
+          <div class="timeline-marker timeline-marker--active" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <time class="timeline-date" datetime="2026-02">Feb 2026 — Present</time>
+            <h3 class="timeline-role">Web Vulnerability Assessment Intern</h3>
+            <p class="timeline-company">AK Infosoft Pvt. Ltd · Lucknow</p>
+            <ul class="timeline-points">
+              <li>Performed comprehensive website vulnerability assessments on real-world client targets</li>
+              <li>Identified SQL Injection, XSS, and authentication flaws using Burp Suite, Nessus &amp; OWASP ZAP</li>
+              <li>Developed mitigation strategies and created structured VAPT reports for clients</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="timeline-item reveal">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <time class="timeline-date" datetime="2025-07">Jul 2025 — Oct 2025</time>
+            <h3 class="timeline-role">SOC Analyst Training (3 Months)</h3>
+            <p class="timeline-company">AK Infosoft Pvt. Ltd · Cybersecurity</p>
+            <ul class="timeline-points">
+              <li>Executed incident response workflows: detection, triage, containment and reporting in simulated SOC scenarios</li>
+              <li>Administered Linux environments via CLI for log analysis and file permission management</li>
+              <li>Analyzed network traffic and security events to identify misconfigurations and attack activity</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="timeline-item reveal">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <time class="timeline-date">Virtual Experience · Forage</time>
+            <h3 class="timeline-role">Cybersecurity Virtual Experience</h3>
+            <p class="timeline-company">Mastercard · Security Awareness Team</p>
+            <ul class="timeline-points">
+              <li>Analyzed phishing threats and recommended targeted security awareness training improvements</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="timeline-item reveal">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <time class="timeline-date">Virtual Experience · Forage</time>
+            <h3 class="timeline-role">Cybersecurity IAM Developer</h3>
+            <p class="timeline-company">Tata Consultancy Services</p>
+            <ul class="timeline-points">
+              <li>Implemented IAM concepts including authentication, authorization, RBAC and MFA</li>
+              <li>Assessed IAM strategies and supported hybrid identity solutions</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="timeline-item reveal">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <time class="timeline-date" datetime="2024-07">Jul 2024 — Oct 2024</time>
+            <h3 class="timeline-role">Android Development Specialist</h3>
+            <p class="timeline-company">Navanectar Services Pvt Ltd · Virtual</p>
+            <ul class="timeline-points">
+              <li>Built full-stack Android application improving UX scores by 15% as sole intern</li>
+              <li>Developed 20+ UI components using Android SDK; implemented SQLite data persistence</li>
+            </ul>
+          </div>
+        </li>
+
+      </ol>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT ═══ -->
+  <section id="contact" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="contact-inner reveal">
+        <div class="contact-badge" role="status" aria-label="Availability status">
+          <span class="badge-dot" aria-hidden="true"></span>
+          Open to Opportunities
+        </div>
+
+        <h2 id="contact-heading" class="contact-headline">
+          Let's <em>Connect</em>
+        </h2>
+        <p class="contact-sub">Looking for an entry-level SOC Analyst / Junior Cybersecurity Analyst role where I can protect and defend.</p>
+
+        <div class="contact-cards">
+          <a href="mailto:himanshu894801@gmail.com" class="contact-card" aria-label="Send email">
+            <span class="contact-icon" aria-hidden="true">✉</span>
+            <span class="contact-label">Email</span>
+            <span class="contact-value">himanshu894801@gmail.com</span>
+          </a>
+         ?<!-- <a href="tel:+918948017103" class="contact-card" aria-label="Call phone">
+            <span class="contact-icon" aria-hidden="true">☎</span>
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">+91 8948017103</span>
+          </a>
+          -->
+          <a href="https://www.linkedin.com/in/himanshpandey89" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="LinkedIn profile">
+            <span class="contact-icon" aria-hidden="true">in</span>
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">himanshpandey89</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">[Himanshu Pandey]</span>
+        <p class="footer-copy">© 2026 Himanshu Pandey · Built with intention &amp; caffeine</p>
+        <a href="#hero" class="footer-back" aria-label="Back to top">↑ top</a>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+</html>
